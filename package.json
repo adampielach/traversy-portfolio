@@ -9,7 +9,7 @@
     "gulp"
   ],
   "author": "Adam Pielach",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "del": "^3.0.0",
