@@ -1,0 +1,35 @@
+@import "settings";
+
+body {
+    background-color: $color-bg;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#main-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    #print-header {
+        
+        &::after {
+            content: '❙';
+            color: black;
+            animation: 1s blink infinite;
+            font-size: 1.2em;
+            line-height: 1.1em;
+            position: absolute;
+        }
+    }
+    @keyframes blink {
+        0% {opacity: 0;}
+        50% {opacity: 1;}
+        100% {opacity: 0;}
+    }
+}
